@@ -14,4 +14,4 @@ WORKDIR /regexper-static
 CMD yarn start --host 0.0.0.0 --port 8080 --mode production
 
 HEALTHCHECK --start-period=30s --interval=5s --timeout=5s \
- CMD curl -f http://localhost/ || exit 1
+ CMD curl -f http://0.0.0.0/ || exit 1
